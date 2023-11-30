@@ -36,9 +36,10 @@ func main() {
 	//dealing with case
 	myString := " This is a clear EXAMPLE of why we seach in one case only."
 
-	searchString := strings.ToLower(myString)
-
-	if strings.Contains(searchString, "this") {
+	//searchString := strings.ToLower(myString)
+	//if strings.Contains(searchString, "this") {
+	// or
+	if strings.Contains(strings.ToLower(myString), "this") {
 		fmt.Println("Found it!")
 	} else {
 		fmt.Println("Did not find it!")
